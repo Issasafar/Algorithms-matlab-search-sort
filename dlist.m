@@ -49,14 +49,14 @@ disp('1=manually entering a data for each node')
 disp('2=create a linear list with steps between start and end ')
 disp('3=create a magic list')
 disp('4=create a random list')
-x=input('choose a number');
+x=input('choose a number ');
 switch x 
     case 1
         list=dlist.manlist(8);
     case 2
-        start=input('enter starting number');
-        last=input('enter the last number');
-        step=input('enter step between two consecutive numbers');
+        start=input('enter starting number ');
+        last=input('enter the last number ');
+        step=input('enter step between two consecutive numbers ');
         list=dlist.linlist(start,last,step);
     case 3
         list=dlist.magiclist(8,1,1);
