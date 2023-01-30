@@ -97,7 +97,7 @@ else
 disp(['found at index ',num2str(search_result)]);
 end
 case 2
-disp('worst case happens when list elements are
+disp('worst case happens when list elements are');
 disp('exponentially related');
 disp('for example the set :');
 disp('10000000 1000000 100000 10000 1000 100 10 1');
