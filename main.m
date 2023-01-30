@@ -6,7 +6,7 @@ while exist('yourlist')==0
 try
 yourlist=dlist.createlist;
 catch E
-warning('try to enter a valid number');
+warning('try to enter a valid number ');
 end
 end
 p=true;
@@ -30,7 +30,7 @@ disp('7=merge sort');
 disp('8=quick sort');
 disp('9=change the list');
 disp('0=STOP')
-x=input('ENTER YOUR CHOICE');
+x=input('ENTER YOUR CHOICE ');
 switch x
 case 0
 p=false;
@@ -38,24 +38,24 @@ case 1
 sortedlist=list;
 quicksort(sortedlist);
 sortedlist.printlist;
-val=input('what is the data you want to search for');
+val=input('what is the data you want to search for ');
 search_result=linearsearch(sortedlist,val);
 if search_result==-1
 disp('not found !');
 else
 disp(['found at index ',num2str(search_result)]);
 end
-input('press any key to continue','s');
+input('press any key to continue ','s');
 case 2
 disp('1=binary search for value');
 disp('2=worst case for binary search');
-x2=input('choose a number');
+x2=input('choose a number ');
 switch x2
 case 1
 sortedlist=list;
 quicksort(sortedlist);
 sortedlist.printlist;
-val=input('what is the data you want to search for');
+val=input('what is the data you want to search for ');
 search_result=binarysearch(sortedlist,val);
 if search_result==-1
 disp('not found !');
@@ -68,7 +68,7 @@ disp('that is far away from the middle e.g head or tail');
 sortedlist=list;
 mergesort(sortedlist);
 sortedlist.printlist;
-val=input('what is the data you want to search for');
+val=input('what is the data you want to search for ');
 tic
 search_result=linearsearch(sortedlist,val);
 toc
@@ -79,17 +79,17 @@ disp(['found at index ',num2str(search_result)]);
 end
 otherwise
 end
-input('press any key to continue','s');
+input('press any key to continue ','s');
 case 3
 disp('1=interpolation search for value');
 disp('2=worst case for interpolation search');
-x3=input('choose a number');
+x3=input('choose a number ');
 switch x3
 case 1
 sortedlist=list;
 quicksort(sortedlist);
 sortedlist.printlist;
-val=input('what is the data you want to search for'); 
+val=input('what is the data you want to search for '); 
 search_result=intersearch(sortedlist,val);
 if search_result==-1
 disp('not found !');
@@ -121,26 +121,26 @@ disp(['found at index ',num2str(search_result)]);
 end
 otherwise
 end
-input('press any key to continue','s');
+input('press any key to continue ','s');
 case 4
 sortedlist=list;
 bubblesort(sortedlist);
 sortedlist.printlist;
-input('press any key to continue','s');
+input('press any key to continue ','s');
 case 5
 sortedlist=list;
 selectionsort(sortedlist);
 sortedlist.printlist;
-input('press any key to continue','s');
+input('press any key to continue ','s');
 case 6
 sortedlist=list;
 insertionsort(sortedlist);
 sortedlist.printlist;
-input('press any key to continue','s');
+input('press any key to continue ','s');
 case 7
 disp('1=mergesort');
 disp('2=best & worst case');
-x7=input('choose a number');
+x7=input('choose a number ');
 switch x7
 case 1
 sortedlist=list;
@@ -181,11 +181,11 @@ toc
 sortedlist.printlist;
 otherwise 
 end
-input('press any key to continue','s');
+input('press any key to continue ','s');
 case 8
 disp('1=quicksort ');
 disp('2=best & worst case');
-x8=input('enter a number');
+x8=input('enter a number ');
 switch x8
 case 1
 sortedlist=list;
@@ -218,11 +218,11 @@ toc
 sortedlist.printlist;
 otherwise 
 end
-input('press any key to continue','s');
+input('press any key to continue ','s');
 case 9
 list=dlist.createlist
 otherwise 
 warning('invalid input');
-input('press any key to continue','s');
+input('press any key to continue ','s');
 end
 end
