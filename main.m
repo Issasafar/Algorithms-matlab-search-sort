@@ -1,6 +1,6 @@
 clc
 clear
-disp(' WELCOME ')
+disp(' WELCOME ! ')
 disp('this project perform merge and sort algorithms on doubly linked list');
 while exist('yourlist')==0
 try
